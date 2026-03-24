@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 100px;
+ 
+}
+body{
+    display: flex;
+    height: 100svh;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+ 
+}
+.success{
+    min-width: 80vw;
+    padding: 2em;
+}
