@@ -114,3 +114,12 @@ form a{
     }
     
  }
+ @media (min-width:1100px) {
+    .container{
+        width: 50vw;
+    }
+    section{
+        padding: 2em;
+    }
+    
+ }
