@@ -24,3 +24,26 @@
      justify-content: center;
      align-items: center;
  }
+
+ .container {
+     padding: 2em;
+ }
+
+ h2 {
+    margin-block-start: 1em;
+    font-size: 1rem;
+    font-weight: lighter;
+ }
+ li{
+    line-height: 1.5;
+ }
+ ul{
+    padding-top: 1em;
+    padding-bottom: 1em;
+ }
+ h5{
+    margin-bottom: 0.5em;
+ }
+ .inputField{
+    margin-bottom: 1.5em;
+ }
