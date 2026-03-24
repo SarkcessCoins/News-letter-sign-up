@@ -24,7 +24,7 @@ body{
 }
 .success{
     display: flex;
-    min-width: 85vw;
+    width: 85vw;
     flex-direction: column;
     min-height: 100vh;
     padding: 1.5em;
@@ -49,4 +49,22 @@ background-color: var(--black);
 }
 .dismiss{
     margin-top: auto;
+}
+@media (min-width:900px) {
+    body{
+        background-color: var(--black);
+        color: var(--White);
+    }
+    .success{
+        width: 32vw;
+        background-color: var(--White);
+        min-height: 32vh;
+        color: var(--black);
+        border-radius: 1.5em;
+        padding: 2em;
+    }
+.dismiss{
+    margin-top: 3em;
+}
+    
 }
