@@ -19,11 +19,26 @@ function handleSubmit(e) {
     } else {
         window.location.href="about/success.html"
      }
+}
+ 
+
+
+// funstion to handle the button clicked event
+function buttonClick(e) {
+  
+    if (inputField.value === " " || inputField.value === "") {
+         e.preventDefault()
+        errorMessage.classList.add("active")
+    } else {
+       
+       
+     }
  }
     
 
 //events
 form.addEventListener("submit", handleSubmit)
+button.addEventListener("click", buttonClick)
  
 
 
