@@ -68,7 +68,11 @@
  .error-message{
     display: none;
  }
-form a{
+ .active{
+   display: flex;
+   color: var(--Red);
+ }
+form button{
     text-decoration: none;
     display: flex;
     flex-direction: row;
@@ -77,10 +81,12 @@ form a{
     color: var(--White);
     background-color: var(--black);
     padding: 1em;
+    border-style: none;
     border-radius: 6px;
  }
- form a:hover{
+ form button:hover{
     background-color: var(--Red);
+    cursor: pointer;
  }
 
  @media (min-width:600px) {
