@@ -1,8 +1,7 @@
 const
     inputField = document.querySelector('.inputField'),
     form =document.querySelector("form"),
-    button = document.querySelector(".subscribeBtn"),
-    userEmail =document.getElementById("email"),
+    userEmail =document.querySelector("#email"),
     errorMessage = document.querySelector(".error-message");
 
 
@@ -15,25 +14,38 @@ function validateEmail(email) {
 function handleSubmit(e) {
      const value = inputField.value.trim()
       e.preventDefault()
-    if (inputField.value === " " || inputField.value === "") {
+    if (!value) {
         errorMessage.textContent ="Enter Email"
         errorMessage.classList.add("active")
 
     } else if (!validateEmail(value)) {
-    
         errorMessage.classList.add("active")
     } 
     else {
-        window.location.href="about/success.html"
+ // local storage stores  string locally with a key which can be called anything in this case userMail and what its storing 
+        localStorage.setItem('userMail', value)
+        window.location.href = "about/success.html"
+        form.reset()
        
-     }
+    }
+  
+   
+    
 }
 
 
+if (window.location.href.includes( "/about/success.html" )) {
+    const storesEmail = localStorage.getItem('userMail')
+    userEmail.textContent = storesEmail
     
+}
+
+
 
 //events
 form.addEventListener("submit", handleSubmit)
+
+
 
  
 
