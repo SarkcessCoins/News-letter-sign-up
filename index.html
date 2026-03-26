@@ -35,10 +35,11 @@
     <li>And much more!</li>
     </ul>
     <form action="">
-      <div class="email"><h5>Email address</h5> <h5 class="error-message">valid email required</h5> </div>
-      <input type="email" placeholder=" email@company.com" class="inputField">
-      <button class="subscribeBtn" type="submit">Subscribe to monthly newsletter</button>
+      <div  class="email"><label for="email">Email address</label> <span class="error-message">valid email required</span> </div>
+      <input type="email" placeholder=" email@company.com" class="inputField" id="input" aria-describedby="error-message" required>
+      <button class="subscribeBtn" id="subscribeBtn" type="submit">Subscribe to monthly newsletter</button>
     </form>
+    
     <!-- Sign-up form end -->
    
   </section>

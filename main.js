@@ -1,5 +1,5 @@
 const
-    inputField = document.querySelector('.inputField'),
+    inputField = document.querySelector('#input'),
     form =document.querySelector("form"),
     userEmail =document.querySelector("#email"),
     errorMessage = document.querySelector(".error-message");
