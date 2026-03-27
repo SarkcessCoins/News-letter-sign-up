@@ -1,7 +1,6 @@
 const
     inputField = document.querySelector('#input'),
     form =document.querySelector("form"),
-    userEmail =document.querySelector("#email"),
     errorMessage = document.querySelector(".error-message");
 
 
@@ -33,12 +32,6 @@ function handleSubmit(e) {
     
 }
 
-
-if (window.location.href.includes( "/about/success.html" )) {
-    const storesEmail = localStorage.getItem('userMail')
-    userEmail.textContent = storesEmail
-    
-}
 
 
 
