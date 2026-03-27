@@ -1,7 +1,9 @@
 const userEmail = document.querySelector("#email");
 
-if (window.location.href.includes( "/about/success.html" )) {
-    const storesEmail = localStorage.getItem('userMail')
-    userEmail.textContent = storesEmail
-    
-}
+const storesEmail = localStorage.getItem('userMail')
+if (!storesEmail) {
+        window.location.href ='/index.html'
+} else {
+      userEmail.textContent = storesEmail
+    }
+  
